@@ -1,0 +1,32 @@
+{
+  "name": "tiff2pdf",
+  "version": "1.0.0",
+  "description": "Coverts tiff images to pdfs utilizing libtiff",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwhite911/tiff2pdf.git"
+  },
+  "keywords": [
+    "libtiff",
+    "tiff2pd2",
+    "tiff",
+    "tif",
+    "pdf"
+  ],
+  "author": "Corey White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwhite911/tiff2pdf/issues"
+  },
+  "homepage": "https://github.com/cwhite911/tiff2pdf",
+  "devDependencies": {
+    "tape": "~3.5.0"
+  }
+}
