@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "tape tests/*.js"
+    "test": "tape tests/*.js",
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   },
   "homepage": "https://github.com/cwhite911/tiff2pdf",
   "devDependencies": {
-    "tape": "~3.5.0"
+    "tape": "~3.5.0",
+    "dox": "^0.7.1",
+    "doxme": "^1.8.2"
   }
 }
