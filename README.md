@@ -1,4 +1,42 @@
-[![Build Status](https://travis-ci.org/cwhite911/tiff2pdf.svg)](https://travis-ci.org/cwhite911/tiff2pdf)
-
 # tiff2pdf
-Converts tiff images into pdfs
+
+[![build status](https://secure.travis-ci.org/cwhite911/tiff2pdf.png)](http://travis-ci.org/cwhite911/tiff2pdf)
+
+Coverts tiff images to pdfs utilizing libtiff
+
+
+### `tiff2pdf(Input, Output)`
+
+Converts tiff image into pdf document using tifflib (tiff2pdf).
+
+### Parameters
+
+| parameter | type   | description |
+| --------- | ------ | ----------- |
+| `Input`   | string | tiff image  |
+| `Output`  | string | directory   |
+
+
+### Example
+
+```js
+tiff2pdf('test.tiff', '/pdfs', function(result){
+   console.log(result);
+});
+```
+
+## Installation
+
+Requires [nodejs](http://nodejs.org/).
+
+```sh
+$ npm install tiff2pdf
+```
+
+## Tests
+
+```sh
+$ npm test
+```
+
+
