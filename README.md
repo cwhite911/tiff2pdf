@@ -13,8 +13,8 @@ Converts tiff image into pdf document using tifflib (tiff2pdf).
 
 | parameter | type   | description |
 | --------- | ------ | ----------- |
-| `Input`   | string | tiff image  |
-| `Output`  | string | directory   |
+| `tiff`   | string | input tiff image  |
+| `outDir`  | string | output directory   |
 
 
 ### Example
