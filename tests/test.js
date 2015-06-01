@@ -46,7 +46,7 @@ test('Convert tiff to pdf', function (t){
   //Test 6: GeoTiff
   t.comment('Test 6: Normal tiff');
   tiff2pdf(inFile6, outDir, function(result){
-    t.notOk(result.code, 'Test 6: successful, Normal tiff');
+    t.ok(result.message, 'Test 6: successful, Normal tiff');
   });
 
   t.end();
