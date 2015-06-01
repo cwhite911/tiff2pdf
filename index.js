@@ -12,20 +12,20 @@ module.exports = function(ifile, odir, cb){
 
   tiff2pd2.stdout.on('data', function (data) {
     // console.log('stdout: ' + data);
-    cb({success: 'tiff converted to pdf success', data: data.toString('utf-8')});
+    cb({message: 'stdout', data: data.toString('utf-8')});
   });
 
   tiff2pd2.stderr.on('data', function (data) {
     // console.log('stderr: ' + data);
-    cb({error: 'Error occured on child process', data: data.toString('utf-8')});
+    cb({message: 'stderr', data: data.toString('utf-8')});
   });
 
   tiff2pd2.on('close', function (code) {
-    cb({message: 'closed', code: code});
+    cb({message: 'close', code: code});
   });
 
   tiff2pd2.on('error', function (code) {
-    cb({error: 'Error occured on child process', code: code});
+    cb({message: 'error', code: code});
   });
 
 };
