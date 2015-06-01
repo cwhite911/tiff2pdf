@@ -5,8 +5,8 @@ var spawn = require('child_process').spawn,
  * Converts tiff image into pdf document using tifflib (tiff2pdf).
  *
  * @module tiff2pdf
- * @param {string} Input tiff image
- * @param {string} Output directory
+ * @param {string} tiff Input tiff image
+ * @param {string} outDir Output directory
  * @rutrhn {function} Returns results object with message, data and code keys
  * @example
  * tiff2pdf('test.tiff', '/pdfs', function(result){

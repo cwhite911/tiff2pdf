@@ -5,7 +5,7 @@
 Coverts tiff images to pdfs utilizing [libtiff](http://www.remotesensing.org/libtiff/man/tiff2pdf.1.html)
 
 
-### `tiff2pdf(Input, Output)`
+### `tiff2pdf(tiff, outDir)`
 
 Converts tiff image into pdf document using tifflib (tiff2pdf).
 
